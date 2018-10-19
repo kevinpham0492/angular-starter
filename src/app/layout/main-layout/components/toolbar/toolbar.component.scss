@@ -1,0 +1,10 @@
+$toolbar-height: 56px;
+.logo {
+  height: 26px;
+  margin-right: 8px;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: $toolbar-height;
+  height: $toolbar-height;
+}

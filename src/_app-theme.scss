@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+
+@import 'app/home/home-page/home-page.component.theme';
+@import 'app/auth/containers/login-page/login-page.component.theme';
+
+// Styles for the docs app that are based on the current theme.
+@mixin app-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+
+  @include home-page-theme($theme);
+  @include login-page-theme($theme);
+}

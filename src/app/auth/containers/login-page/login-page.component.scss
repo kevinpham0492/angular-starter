@@ -1,0 +1,36 @@
+@import '~@angular/material/theming';
+@import 'src/styles/mixin';
+// Default styles
+#login-page {
+  padding: 32px;
+  app-login-form {
+    display: block;
+    width: 384px;
+    max-width: 384px;
+    padding: 32px;
+    text-align: center;
+  }
+}
+
+// Screen and (max-width: 599px)
+@include media-breakpoint('xs') {
+  #login-page {
+    padding: 16px;
+    app-login-form {
+      width: 100%;
+      max-width: 100%;
+      padding: 16px;
+    }
+  }
+}
+
+// Screen and (min-width: 600px)
+@include media-breakpoint('gt-xs') {
+  #login-page {
+    background: url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat;
+    background-size: cover;
+    app-login-form {
+      @include mat-elevation(4);
+    }
+  }
+}

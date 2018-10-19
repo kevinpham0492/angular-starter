@@ -1,0 +1,9 @@
+body {
+  >mat-sidenav-container {
+    height: 100%;
+  }
+}
+
+*[ng-reflect-router-link] {
+  cursor: pointer;
+}
